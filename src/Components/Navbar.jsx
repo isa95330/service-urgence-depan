@@ -39,11 +39,11 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <img src = {Logo} alt="Depanne-moi Logo" className="nav-logo" style={{width: "100px"}} />
+        <img src = {Logo} alt="Depanne-moi Logo" className="nav-logo" style={{width: "120px"}} />
       </div>
       <div className="navbar-links-container">
         <a href="">Accueil</a>
-        <a href="">A propos</a>
+        <a href="">Pourquoi nous appeler</a>
         <a href="">Avis</a>
         <a href="#footer-contact">Contact</a>
        

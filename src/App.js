@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import "./App.css";
 import Home from "./Components/Home";
+import Services from "./Components/Services";
 import About from "./Components/About";
 import Work from "./Components/Work";
 import Testimonial from "./Components/Testimonial";
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <Home />
+      <Services />
       <About />
       <Work />
       {/*<Testimonial />*/}
