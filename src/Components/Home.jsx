@@ -5,7 +5,7 @@ import Serrurier from "../Assets/serrurier.jpg";
 import Navbar from "./Navbar"; // Assurez-vous que Navbar est exporté par défaut dans son fichier
 import { FiArrowRight } from "react-icons/fi"; // Import nommé de react-icons
 import { Carousel } from 'react-responsive-carousel'; // Assurez-vous que Carousel est bien exporté ainsi
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import du fichier CSS
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home = () => {
   return (
