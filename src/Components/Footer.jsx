@@ -31,11 +31,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-rgpd">
-        <p><strong>Transparence</strong></p>
-        <p><strong>Sécurité</strong></p>
-        <p><strong>Droits des utilisateurs</strong></p>
-      </div>
+     
       <div className="footer-legal">
         <a href="/mentions-legales">Mentions Légales</a>
       </div>

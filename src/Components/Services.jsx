@@ -8,8 +8,8 @@ const Services = () => {
     <div id="portfolio" className="services-container">
       <div className="services-content">
         <div className="services-header">
-          <p className="services-title">Portfolio</p>
-          <p className="services-subtitle">Mes différents projets</p>
+          <p className="services-title">Pour vous </p>
+          <p className="services-subtitle">Nos différentes prestations</p>
         </div>
         <div className="services-grid">
           <div className="service-item">
@@ -18,7 +18,7 @@ const Services = () => {
               alt="serrurerie"
               className="portfolio-img"
             />
-            <p className="service-title">Dépannage BTP</p>
+            <p className="service-title">Serrurerie</p>
             <div className="service-buttons">
               <button className="portfolio-button">Lire la suite</button>
             </div>
@@ -30,7 +30,7 @@ const Services = () => {
               alt="plomberie"
               className="portfolio-img"
             />
-            <p className="service-title">Mon Portfolio</p>
+            <p className="service-title">Plomberie/Chauffage</p>
             <div className="service-buttons">
               <button className="portfolio-button">Lire la suite</button>
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
               alt="electricien"
               className="portfolio-img"
             />
-            <p className="service-title">Hair ecommerce</p>
+            <p className="service-title">Electricité</p>
             <div className="service-buttons">
               <button className="portfolio-button">Lire la suite</button>
             </div>

@@ -15,77 +15,211 @@ img {
   margin: 0rem auto;
 }
 body {
+  font-family: 'Roboto', sans-serif;
+
   max-width: 100%;
   overflow-x: hidden;
+  background: linear-gradient(235deg, rgb(247, 246, 251), rgb(212, 213, 238), rgb(174, 193, 229));
 }
 
-body {
-  background-color: #f6f6f6;
-}
+
 
 nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 90px;
+  min-height: 150px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.navbar-menu-container {
-  display: none;
+
+.nav-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.nav-contact-container {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-contact {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, rgb(23, 95, 229), rgb(212, 213, 238));
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s; /* Ajoute une transition pour le survol */
+}
+
+.nav-contact:hover {
+  transform: scale(1.05); /* Agrandit légèrement le cadre au survol */
+  background: linear-gradient(135deg, rgb(18, 75, 180), rgb(182, 183, 205)); /* Change légèrement le dégradé au survol */
+}
+
+
+.nav-urgence-container {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-urgence {
+  font-weight: bold;
+}
+
+.navbar-links-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
 .navbar-links-container a {
-  margin-right: 3rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: black;
   font-size: 1.1rem;
   font-weight: 600;
+  font-family: 'Arial', sans-serif;
 }
-.primary-button {
-  padding: 0.9rem 1.75rem;
-  background-color: white;
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.2s;
+
+.navbar-links-container a:last-child {
+  margin-right: 0;
 }
-.navbar-cart-icon {
-  font-size: 1.15rem;
-}
-.primary-button:hover {
-  background-color: rgb(234, 234, 234);
-}
-.navbar-menu-container svg {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-/* Home.css */
 
 .home-banner-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 20px; /* Espace autour de l'ensemble du contenu */
+  padding: 80px;
+  margin-top: 50px;
 }
 
 .home-text-section {
-  max-width: 50%;
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Réduit l'espace entre les éléments de la section */
+}
+
+.home-small-title {
+  font-size: 18px;
+  color: #1763e5;
+  font-weight: bold;
+  margin: 0 0 5px 0; /* Réduit la marge inférieure */
+}
+
+.primary-heading {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 10px 0; /* Réduit la marge inférieure */
+}
+
+.primary-text {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.service-overview-header {
+  display: flex;
+  align-items: center;
+  margin: 20px 0; /* Ajuste l'espacement au-dessus et au-dessous de la section */
+}
+
+.overview-icon {
+  font-size: 40px;
+  color: #1763e5;
+  margin-right: 10px;
+}
+
+.overview-small-title {
+  font-size: 16px;
+  color: #1763e5;
+}
+
+.overview-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.service-details {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  border-radius: 15px;
+  padding: 25px; /* Espacement intérieur plus généreux */
+  background: linear-gradient(135deg, #1a73e8, #a1c4fd); /* Dégradé vibrant de bleu */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée pour un effet de profondeur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet de hover */
+}
+
+.service-details:hover {
+  transform: translateY(-7px); /* Légère remontée sur hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Ombre plus dramatique sur hover */
+}
+
+.service-section-left,
+.service-section-right {
+  flex: 1; /* Chaque section prend un espace égal */
+  color: white; /* Texte en blanc pour contraster avec le fond */
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #ffffff80; /* Ligne verticale semi-transparente */
+  height: auto;
+  margin: 0 20px; /* Espacement autour de la ligne */
+}
+
+
+
+.service-section-right p {
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+.contact-number {
+  margin-top: 20px; /* Réduit l'espace au-dessus du numéro de téléphone */
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
 
 .home-bannerImage-container {
-  max-width: 45%;
-  background-color: rgba(0, 0, 0, 0.1); /* Fond légèrement grisé */
-  padding: 20px; /* Espace autour du contenu */
-  border-radius: 10px; /* Coins arrondis */
+  max-width: 60%;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
 }
 
 .round-image {
   width: 100%;
   height: auto;
-  border-radius: 10%; /* Coins légèrement arrondis */
+  border-radius: 10%;
   object-fit: cover;
-  border: 3px solid white; /* Bordure blanche autour des images */
+  border: 3px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,20 +230,71 @@ nav {
   align-items: center;
 }
 
-.secondary-button {
-  padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 600;
-  color: white;
-  transition: 0.2s;
+
+.service-details {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.service-section-left,
+.service-section-right {
+  flex: 1;
+}
+
+.service-section-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  font-size: 36px;
+  color: #1763e5;
+  margin-right: 10px;
+}
+
+.service-small-title {
+  font-size: 16px;
+  color: #1763e5;
+}
+
+.service-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+.vertical-line {
+  width: 2px;
+  background-color: #ddd;
+  height: 100%;
+  align-self: stretch;
+}
+
+.service-section-right {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+.round-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .services-container {
@@ -183,7 +368,7 @@ nav {
 
 .portfolio-button {
   padding: 8px 16px;
-  background-color: #fe9e0d;
+  background-color: rgb(23, 95, 229);
   border: none;
   border-radius: 50px;
   font-size: 16px;
@@ -193,7 +378,7 @@ nav {
 }
 
 .portfolio-button:hover {
-  background-color: #e48f0f;
+  background-color: rgb(23, 95, 229);
 }
 
 
@@ -202,39 +387,82 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: rgb(23, 95, 229);
 }
 .about-section-container {
-  margin-top: 20rem;
-  position: relative;
+  display: flex;
+  align-items: center; /* Aligne l'image et le texte au centre verticalement */
+  justify-content: space-between; /* Espace entre l'image et le texte */
+  padding: 20px;
+  gap: 40px; /* Augmente l'espacement entre l'image et le texte */
+  margin-top: 60px; /* Ajoute de la marge au-dessus de la section */
+}
+
+.about-section-image-container {
+  flex: 1; /* Permet à l'image de prendre une partie de l'espace */
+  max-width: 35%; /* Réduit légèrement la largeur maximale de l'image */
+  margin-right: 40px; /* Augmente l'espacement entre l'image et le texte */
+}
+
+.about-section-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Coins arrondis pour l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour l'image */
+}
+
+.about-section-text-container {
+  flex: 2; /* Permet au texte de prendre plus d'espace */
+  max-width: 60%; /* Limite la largeur maximale du texte */
+  text-align: left; /* Aligne le texte à gauche */
+  margin-right: 20px; /* Ajoute de la marge à droite du texte */
+}
+
+.primary-subheading {
+  font-size: 18px;
+  color: #1763e5;
+  font-weight: bold;
+  margin: 0 0 10px 0; /* Réduit la marge inférieure */
+}
+
+.primary-heading {
+  font-size: 32px;
+  color: #333;
+  margin: 0 0 20px 0; /* Espacement sous le titre */
+}
+
+.primary-text {
+  font-size: 18px;
+  color: #555;
+  margin: 0 0 10px 0; /* Réduit l'espacement entre les paragraphes */
+}
+
+.about-buttons-container {
+  margin-top: 20px; /* Espacement au-dessus des boutons */
+}
+
+.secondary-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, rgb(23, 95, 229), rgb(212, 213, 238));
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.about-background-image-container {
-  position: absolute;
-  left: -150px;
-  z-index: -2;
-}
-.about-section-image-container {
-  flex: 0.9;
-  margin-right: 1rem;
-}
-.about-section-text-container {
-  flex: 1;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
 }
-.primary-subheading {
-  font-weight: 700;
-  color: #fe9e0d;
-  font-size: 1.15rem;
+
+.secondary-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, rgb(18, 75, 180), rgb(182, 183, 205));
 }
-.about-buttons-container {
-  margin-top: 2rem;
-  display: flex;
-}
+
+
 
 .contact-page-wrapper h1 {
   max-width: 900px !important;
@@ -270,6 +498,8 @@ nav {
   padding: 50px 20px;
   position: relative;
   margin-top: 10rem;
+
+
 }
 
 .footer-wrapper::before {
@@ -281,7 +511,7 @@ nav {
   bottom: 0;
   background-color: #f0f0f0;
   z-index: -1;
-  transform: skewX(-3deg);
+
 }
 
 .footer-content {
@@ -290,6 +520,8 @@ nav {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  
 }
 
 .footer-logo-container {
@@ -398,7 +630,7 @@ nav {
 
 .contact-header {
   margin-bottom: 15px;
-  color: #fe9e0d;
+  color: rgb(23, 95, 229);
 }
 
 .phone-number {
@@ -469,7 +701,7 @@ nav {
 .testimonials-stars-container svg {
   margin: 0rem 0.25rem;
   font-size: 1.5rem;
-  color: #fe9e0d;
+  color: rgb(23, 95, 229);
 }
 .testimonial-section-bottom h2 {
   margin-top: 1.5rem;
