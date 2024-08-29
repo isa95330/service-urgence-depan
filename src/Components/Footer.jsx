@@ -5,7 +5,7 @@ import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer-wrapper">
+    <footer id="contact" className="footer-wrapper">
       <div className="footer-content">
         <div className="footer-logo-container">
           <img src={Logo} alt="Depanne-moi Logo" className="footer-logo" />

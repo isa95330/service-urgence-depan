@@ -44,11 +44,11 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-links-container">
-        <a href="">Accueil</a>
-        <a href="">Pourquoi nous appeler</a>
-        <a href="">Nos tarifs</a>
-        <a href="">Avis</a>
-        <a href="#footer-contact">Contact</a>
+        <a href="#Home">Accueil</a>
+        <a href="#why">Pourquoi nous appeler</a>
+        <a href="#why">Nos tarifs</a>
+        <a href="#About">Avis</a>
+        <a href="#contact">Contact</a>
       </div>
 
       <div className="navbar-menu-container">

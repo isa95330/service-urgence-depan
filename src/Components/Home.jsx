@@ -9,7 +9,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div id="Home" className="home-container">
       <Navbar />
       <div className="home-banner-container">
         <div className="home-text-section">
