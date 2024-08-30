@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
 import Serrurier from "../Assets/serrurier.jpg";
 import Plomberie from "../Assets/plombier.jpg";
 import Electricite from "../Assets/electricien.jpg";
 
 const Services = () => {
   return (
+    
     <div id="why" className="services-container">
       <div className="services-content">
         <div className="services-header">
@@ -20,7 +22,9 @@ const Services = () => {
             />
             <p className="service-title">Serrurerie</p>
             <div className="service-buttons">
-              <button className="portfolio-button">Lire la suite</button>
+              <Link to="/serrurerie">
+                <button className="portfolio-button">Lire la suite</button>
+              </Link>
             </div>
           </div>
 
@@ -32,7 +36,9 @@ const Services = () => {
             />
             <p className="service-title">Plomberie/Chauffage</p>
             <div className="service-buttons">
-              <button className="portfolio-button">Lire la suite</button>
+              <Link to="/serrurerie">
+                <button className="portfolio-button">Lire la suite</button>
+              </Link>
             </div>
           </div>
 
@@ -44,7 +50,9 @@ const Services = () => {
             />
             <p className="service-title">Electricité</p>
             <div className="service-buttons">
-              <button className="portfolio-button">Lire la suite</button>
+              <Link to="/serrurerie">
+                <button className="portfolio-button">Lire la suite</button>
+              </Link>
             </div>
           </div>
         </div>

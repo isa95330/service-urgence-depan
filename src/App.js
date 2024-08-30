@@ -1,27 +1,26 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Home from "./Components/Home";
 import Services from "./Components/Services";
 import About from "./Components/About";
+import Description from "./Components/Description";
 import Work from "./Components/Work";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-
-// Import du logo pour le favicon
-import logo from './Assets/logo-ud.png';
+import Serrurerie from "./Pages/Serrurerie";
+import PromoBanner from "./Components/PromoBanner";
+import Navbar from "./Components/Navbar"; // Importez le composant Navbar
+import logo from './Assets/logo-ud.jpg';
 
 function App() {
   useEffect(() => {
-    // Créer un élément link pour le favicon
     const link = document.createElement('link');
     link.rel = 'icon';
     link.type = 'image/png';
     link.href = logo;
-
-    // Ajouter le favicon au head du document
     document.head.appendChild(link);
 
-    // Nettoyage (optionnel) : supprimer le favicon quand le composant est démonté
     return () => {
       document.head.removeChild(link);
     };
@@ -29,12 +28,24 @@ function App() {
 
   return (
     <div className="App">
-      <Home />
-      <Services />
-      <About />
-      <Work />
-      <Contact />
-      <Footer />
+      <Router>
+        <Navbar /> {/* Ajoutez la Navbar ici */}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <PromoBanner />
+              <Home />
+              <Services />
+              <About />
+              <Description />
+              <Work />
+              <Contact />
+              <Footer />
+            </>
+          } />
+          <Route path="/serrurerie" element={<Serrurerie />} /> {/* Route pour la page Serrurerie */}
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../Assets/logo-ud.png";
+import Logo from "../Assets/logo-ud.jpg";
 import { SiLinkedin } from "react-icons/si";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 

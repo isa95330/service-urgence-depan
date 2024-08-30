@@ -21,28 +21,28 @@ const Work = () => {
       text: "Nos serruriers sont des experts des clés et des serrures ! Que vous soyez enfermé dehors ou que vous ayez besoin d'une nouvelle serrure, ils interviennent rapidement pour garantir votre sécurité et votre tranquillité d'esprit.",
     },
   ];
+
   return (
-    <div className="work-section-wrapper">
+    <section className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Besoin d’un Coup de Main? 📞</p>
-        <h1 className="primary-heading">Passez nous un appel.</h1>
         <p className="primary-text">
-        Votre partenaire de confiance à Paris et en Petite Couronne pour des dépannages rapides,
-         efficaces, et toujours dans la bonne humeur!
+          Votre partenaire de confiance à Paris et en Petite Couronne pour des dépannages rapides,
+          efficaces, et toujours dans la bonne humeur!
         </p>
+        <h1 className="primary-heading">Passez-nous un appel.</h1>
       </div>
       <div className="work-section-bottom">
         {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
-            </div>
+          <article className="work-section-info" key={data.title}>
+            <figure className="info-boxes-img-container">
+              <img src={data.image} alt={data.title} />
+            </figure>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
-          </div>
+          </article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

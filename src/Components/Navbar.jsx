@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Assets/logo-ud.png";
+import Logo from "../Assets/logo-ud.jpg";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -39,12 +39,13 @@ const Navbar = () => {
         <div className="nav-urgence-container">
           <div className="nav-urgence">
             Urgence dépannage 7j/7 24h/24
+
           </div>
         </div>
       </div>
 
       <div className="navbar-links-container">
-        <a href="#Home">Accueil</a>
+        <a href="#About">Accueil</a>
         <a href="#why">Pourquoi nous appeler</a>
         <a href="#why">Nos tarifs</a>
         <a href="#About">Avis</a>

@@ -2,24 +2,26 @@ import React from "react";
 import Plombier from "../Assets/plombier.jpg";
 import Electricien from "../Assets/electricien.jpg";
 import Serrurier from "../Assets/serrurier.jpg";
-import Navbar from "./Navbar";
 import { FiZap, FiDroplet, FiThermometer, FiLock, FiPhone, FiInfo } from "react-icons/fi";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Devis from "../Assets/devis.jpg";
+
 
 const Home = () => {
   return (
     <div id="Home" className="home-container">
-      <Navbar />
       <div className="home-banner-container">
         <div className="home-text-section">
-          <div className="home-small-title">Aide</div>
-          <h1 className="primary-heading">
-            Urgence dépannage
-          </h1>
-          <p className="primary-text">
-            Le Coup de Pouce efficace et rapide pour vos Pépins d'Électricité générale, Plomberie, chauffage et Serrurerie à Paris et en Petite Couronne.
-          </p>
+        <div className="heading-container">
+        <img src={Devis} alt="icone du devis gratuit" className="devis-icon" />
+        <h1 className="primary-heading">
+          Devis Gratuit
+        </h1>
+        </div>
+        <p className="primary-text">
+        Le Coup de Pouce efficace et rapide pour vos Pépins d'Électricité générale, Plomberie, chauffage et Serrurerie à Paris et en Petite Couronne.
+        </p>
 
           {/* Sous-titre et Titre au-dessus des sections */}
           <div className="service-overview-header">
